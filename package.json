@@ -1,0 +1,11 @@
+{
+  "name": "curso_node_do_basico_ao_avancado",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/naua1/curso_node_do_basico_ao_avancado",
+  "author": "Nauã <90857896+naua1@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

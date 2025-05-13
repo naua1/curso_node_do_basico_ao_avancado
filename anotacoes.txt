@@ -1,0 +1,10 @@
+Json é uma linguagem de comunicacao entre serviços(maquinas)
+
+--------------------------------------------------------------------
+GET http://api.com/ clientes/ 1   
+
+Metodo HTTP: GET      
+ROTA : clientes  
+Parametro: 1
+
+---------------------------------------------------------------------
