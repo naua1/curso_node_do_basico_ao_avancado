@@ -8,3 +8,5 @@ ROTA : clientes
 Parametro: 1
 
 ---------------------------------------------------------------------
+
+json tem estrtura muito parecida com objetos/array
