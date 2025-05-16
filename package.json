@@ -6,6 +6,7 @@
   "author": "Nauã <90857896+naua1@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0", 
+    "nodemon": "^3.1.10"
   }
 }

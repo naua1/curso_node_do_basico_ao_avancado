@@ -10,3 +10,8 @@ Parametro: 1
 ---------------------------------------------------------------------
 
 json tem estrtura muito parecida com objetos/array
+---------------------------------------------------------------------
+toda aplicacao gerencia informacoes. Uma aplicacao de loja
+gerencia: protudos. clientes, etc..
+
+isso é chamado de recurso no modelo REST
