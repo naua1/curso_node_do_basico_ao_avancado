@@ -50,6 +50,27 @@ server.post("/costumers", (req,res) =>{
         return res.status(201).json(newcostumers);
 });
 
+server.put("/costumer/:id", (req, res) =>{
+	//pega o id do parametro e transforma em int
+	const id = parseInt(req.params.id);
+	
+	//pegar o nome e site do corpo da requisicao
+	const {nome, site} = req.body;
+	
+	//pega o index do costumer dentro do array
+	const index = costumers.findIndex(item => item.id === id);
+	
+	//se o index for maio ou iqual a zero ele returno um status de 200
+	const status = index >=0? 200:404;
+
+	if(index >= 0){
+	// atualiza o costumer com as novas informacoes
+	costumers[index] = {id,nome, site};
+	
+	return res.status(status).json(costumers[index]);
+};
+});
+
 server.listen(3000, '0.0.0.0', () => {
   console.log('Servidor rodando!');
 });
