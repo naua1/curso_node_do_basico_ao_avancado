@@ -15,3 +15,5 @@ toda aplicacao gerencia informacoes. Uma aplicacao de loja
 gerencia: protudos. clientes, etc..
 
 isso é chamado de recurso no modelo REST
+-------------------------------------
+O express facilita a criação de rotas, respostas HTTP, middleware, validações e APIs REST de forma simples e rápida.
