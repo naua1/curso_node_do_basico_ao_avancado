@@ -38,15 +38,15 @@ server.get("/costumer/:id", (req,res)=>{
 });
 
 server.post("/costumers", (req,res) =>{
-
+        // 1. Extrai os campos nome e site do corpo da requisição
         const {nome , site} = req.body;
-
+        // 2. Cria um novo ID baseado no último ID do array
         const id = costumers[costumers.length -1].id + 1;
-
+        // 3. Cria o novo cliente com os dados recebidos + ID 
         const newcostumers = {id,nome,site};
-
+        //  4. Adiciona o novo cliente ao array
         costumers.push(newcostumers);
-
+         // 5. Retorna o cliente criado com status 201 Created
         return res.status(201).json(newcostumers);
 });
 
