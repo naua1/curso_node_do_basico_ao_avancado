@@ -71,6 +71,27 @@ server.put("/costumer/:id", (req, res) =>{
 };
 });
 
+   server.delete("/costumers/:id", (req, res) =>{
+
+        const id = parseInt(req.params.id);
+        const index = costumers.findIndex(item => item.id == id);
+
+
+        const status = index >=0? 200:404;
+        
+        if(index >=0){
+
+    //splice apagar o que tiver no index, o numero e quantos itens vao ser apagados
+        costumers.splice(index, 1);
+
+        }
+
+        
+        return res.status(status).json();
+
+        
+    });
+
 server.listen(3000, '0.0.0.0', () => {
   console.log('Servidor rodando!');
 });
