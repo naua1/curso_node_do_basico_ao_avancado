@@ -32,8 +32,13 @@ server.get("/costumer/:id", (req,res)=>{
         //Se não existe (undefined ou null), então status = 404 (Not Found).
         const status = costumer? 200: 404;
         
+
+          console.log("GET :: /costumer/:id", costumer);
+          
         //.json(costumer) → envia o costumer como JSON no corpo da resposta.
         return res.status(status).json(costumer);
+
+      
 
 });
 
